@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Space Mono', monospace;
+}
+
+.calculator {
+    min-height: 100vh;
+    background: hsl(185, 41%, 84%);
+}
+
+.logo img {
+    width: 70px;
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-tip{
+    background-color: hsl(183, 100%, 15%);
+    width: 156px;
+    outline: none;
+    border-style: outset;
+}
+
+.btn-gray {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+
+.input-dark{
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+}
+
+.result-card{
+    background-color: hsl(183, 100%, 15%);
+}
+
+.bg-per {
+    color: hsl(186, 14%, 43%);
+}
+
+.bg-strong-cyan {
+    color: hsl(172, 67%, 45%);
+}
+
+.btn-reset {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.btn-reset:hover {
+    background-color: hsl(189, 41%, 97%);
+}
+
+.bill-input {
+    background: url(../images/icon-dollar.svg) no-repeat 10px 14px;
+    background-color: hsl(189, 41%, 97%);
+
+}
+
+.people-input {
+    background: url(../images/icon-person.svg) no-repeat 10px 14px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.bill-input:focus {
+    border: 1px solid hsl(183, 100%, 15%);
+    outline: none;
+  }
+
+.btn-tip:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.btn-tip.active {
+    background-color: hsl(172, 67%, 45%);
+    border-style: outset;
+}
