@@ -16,6 +16,10 @@ tip.forEach(item => {
 });
 
 people.addEventListener('blur', function() {
+    console.log(bill.value, tipValue, people.value);
+    if(!bill.value || !tipValue || !people.value) {
+        return false;
+    }
     let amount = parseFloat(bill.value);
     let peopleValue = parseInt(people.value);
     let tipPerPerson = tipCalculate(amount, tipValue, peopleValue);
@@ -39,8 +43,8 @@ function totalCalculate(amount, tip, people) {
 
 
 function resetFunction() {
-    bill.value = '0';
-    people.value = 0;
+    bill.value = '';
+    people.value = '';
     tipPersonText.textContent = `$0.00`;
     totalPersonText.textContent = `$0.00`;
     removeActive(tip);

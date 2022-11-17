@@ -27,8 +27,9 @@ label {
 .btn-tip{
     background-color: hsl(183, 100%, 15%);
     flex-basis: 47%;
-    outline: none;
-    border-style: outset;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.2rem 0;
 }
 
 .btn-gray {
@@ -83,8 +84,8 @@ label {
 
 .btn-tip.active {
     background-color: hsl(172, 67%, 45%);
-    border-style: outset;
 }
+
 
 @media (min-width: 992px){
     .btn-tip {
