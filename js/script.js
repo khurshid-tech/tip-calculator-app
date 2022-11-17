@@ -10,9 +10,7 @@ let totalPerPerson = 0.00;
 tip.forEach(item => {
     item.addEventListener('click', function() {
         tipValue = parseInt(item.dataset.tip);
-        tip.forEach(item => {
-            item.classList.remove('active');
-        })
+        removeActive(tip);
         item.classList.add('active');
     })
 });
@@ -43,4 +41,14 @@ function totalCalculate(amount, tip, people) {
 function resetFunction() {
     bill.value = '0';
     people.value = 0;
+    tipPersonText.textContent = `$0.00`;
+    totalPersonText.textContent = `$0.00`;
+    removeActive(tip);
+
+}
+
+function removeActive(element){
+    element.forEach(item => {
+        item.classList.remove('active');
+    })
 }
